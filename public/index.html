@@ -16,16 +16,17 @@
         <div class="app-button right"><a class="attion" href="https://github.com/maliaomj">Fork Me<i class="fa fa-github"></i></a></div>                     
     </div>
     <div class="app-content">
-     <ul class="news_box">
-     	<li class="news-list">
+     <ul class="news_box "  id="news_box">
+     	<!-- more start template-->
+     	<!-- <li class="news-list">
      		<div class="app-button news_item" data-target="detail">
      			<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1463098467,3448877517&fm=173&s=45C0BC44E04193765674AC900300408B&w=218&h=146&img.JPEG">
      			<div class="content_text">
      				<p class="text">手机需要肩负的任务越来越多，储存空间的压力也变得越来越大。4K 电影、Hi-Res Audio 规格的音乐、高像素照片以及大体积应用，这些都是消耗储存容量的主力军。</p>
      			</div>
      		</div>
-     	</li>
-     	<!-- more -->
+     	</li> -->
+     	<!-- more end template-->
      </ul>
     </div>
 </div>
@@ -35,8 +36,8 @@
 		<div class="app-title">新闻详情</div>
 	</div>
 	<div class="app-content detail_content">
-        <div class="content">
-        	新闻详情
+        <div class="content" id="content_detail">
+  <!-- detail content box -->
         </div>
 		<div class="detail_bottom">
 			<div data-target="home" class="button_item app-button index"><i class="fa fa-home"></i>首页</div>
@@ -49,11 +50,20 @@
 		<div class="app-button left" data-back data-autotitle></div>
 		<div class="app-title">热门评论</div>
 	</div>
-	<div class="app-content">
-		<div class="app-button" data-target="page2">Go to Home</div>
+	<div class="app-content" id="commentsBox">
+		<!-- comments for 循环 -->
+<!-- 		<div class="comment_item">
+			<div class="item_header">
+				<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1463098467,3448877517&fm=173&s=45C0BC44E04193765674AC900300408B&w=218&h=146&img.JPEG"/>
+				<span class="user_name">德玛西亚之力-盖伦</span>
+				<span class="time">2017-05-08</span>
+			</div>
+			<div class="item_body">
+				<span>第一次也是吃了牛肉…吃完以后，人家很客气的问我还需要么…我也很客气地再来了一盒鸡肉的。。。。可惜后来专门坐那个航班，居然换成茄子饭了?</span>
+			</div>
+		</div> -->
 	</div>
-</div>	
-<body>
+</div>	 
 </body>
 <script src="js/zepto.js"></script>
 <script src="js/app.min.js"></script>
