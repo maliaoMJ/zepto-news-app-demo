@@ -1,1 +1,102 @@
+.app-title{
+	background:#46a3da;
+}
+.home-title{
+	background:#46a3da;
+	text-align: left!important;
+    padding-left: 45px;
+}
 
+.fa-drupal{
+  font-size: 1.4em;
+}
+.fa-github{
+	color:black;
+	font-size: 1.2em;
+	margin-left: 5px;
+}
+.attion{
+	text-decoration: none;
+	font-size: 0.9em;
+	color:white;
+
+}
+.news_box{
+	width:98%;
+	margin:0 auto;
+	height:auto;
+	list-style: none;
+
+}
+.news_box>li{
+	width:100%;
+	height:55px;
+
+	list-style: none;
+	display: block;
+	
+	border-bottom:2px solid #e4d9d9;
+	margin-bottom: 5px;
+}
+.news_box>li>.news_item{
+	width:100%;
+	height:100%;
+	background:#ffff!important;
+	display: flex;
+}
+.news_box>li>.news_item>img{
+	height:100%;
+	width:100px;
+}
+.news_box>li>.news_item>.content_text{
+	flex:1;
+
+}
+.news_box>li>.news_item>.content_text>p{
+    margin: 0px;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 0px;
+    padding-left: 5px;
+    padding-top: 7px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    color:black;
+}
+.detail_content{
+display: flex;
+}
+.detail_content>.content{
+	flex:1;
+	background:white;
+}
+.detail_bottom{
+	width:100%;
+	height:50px;
+	display: flex;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+
+}
+.detail_bottom>.button_item{
+   flex:1;
+   text-align: center;
+   
+   color:#fff;
+}
+.detail_bottom>.index{
+	background:red;
+}
+.detail_bottom>.comments{
+	background:#22d622;
+}
+.detail_bottom>.button_item>i{
+	padding-right: 8px;
+}

@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>知乎日报</title>
+    <title>知乎日报web_APP</title>
+    <!-- zepto.js 小练习 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="./style/app.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,28 +11,43 @@
 </head>
 <div class="app-page" data-page="home">
     <div class="app-topbar">
-        <div class="app-title">Home Page</div>
+    	<div class="app-button left"><i class="fa fa-drupal"></i></div>
+        <div class="app-title home-title">知乎日报</div>  
+        <div class="app-button right"><a class="attion" href="https://github.com/maliaomj">Fork Me<i class="fa fa-github"></i></a></div>                     
     </div>
     <div class="app-content">
-    	<div class="app-section">
-    		<div class="app-button" data-target="page2">Go to Page 2</div>
-    	</div>
+     <ul class="news_box">
+     	<li class="news-list">
+     		<div class="app-button news_item" data-target="detail">
+     			<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1463098467,3448877517&fm=173&s=45C0BC44E04193765674AC900300408B&w=218&h=146&img.JPEG">
+     			<div class="content_text">
+     				<p class="text">手机需要肩负的任务越来越多，储存空间的压力也变得越来越大。4K 电影、Hi-Res Audio 规格的音乐、高像素照片以及大体积应用，这些都是消耗储存容量的主力军。</p>
+     			</div>
+     		</div>
+     	</li>
+     	<!-- more -->
+     </ul>
     </div>
 </div>
-<div class="app-page" data-page="page2">
+<div class="app-page" data-page="detail">
 	<div class="app-topbar">
-		<div class="app-button left" data-back data-autotitle></div>
-		<div class="app-title">page 2</div>
+		<div class="app-button left" data-back data-title="返回"></div>
+		<div class="app-title">新闻详情</div>
 	</div>
-	<div class="app-content">
-		<div class="app-button" data-target="home">Go to Home</div>
-		<div class="app-button" data-target="page3">page 3</div>
+	<div class="app-content detail_content">
+        <div class="content">
+        	新闻详情
+        </div>
+		<div class="detail_bottom">
+			<div data-target="home" class="button_item app-button index"><i class="fa fa-home"></i>首页</div>
+			<div data-target="comments" class="button_item app-button comments"><i class="fa fa-comments"></i>查看评论</div>
+		</div>
 	</div>
 </div>	
-<div class="app-page" data-page="page3">
+<div class="app-page" data-page="comments">
 	<div class="app-topbar">
 		<div class="app-button left" data-back data-autotitle></div>
-		<div class="app-title">page 3</div>
+		<div class="app-title">热门评论</div>
 	</div>
 	<div class="app-content">
 		<div class="app-button" data-target="page2">Go to Home</div>
